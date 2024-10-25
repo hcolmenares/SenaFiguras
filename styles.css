@@ -1,0 +1,121 @@
+/* General Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #f2f2f2;
+  min-height: 100vh;
+  font-size: 62.5%;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+}
+
+button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+input,
+select {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.column,
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0;
+  color: #3fe0a5;
+}
+
+.calculator-container {
+  width: 100%;
+}
+
+.label {
+  font-size: 1.2rem;
+}
+
+.form-section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 80%;
+  max-width: 500px;
+}
+
+.type-buttons {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #222;
+  color: #3fe0a5;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.btn.active {
+  background-color: #3fe0a5;
+  color: #fff;
+}
+
+.calcular {
+  width: 100%;
+}
+
+.result {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background: #222;
+  color: #3fe0a5;
+}

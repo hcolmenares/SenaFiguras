@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculo de Figuras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="column">
+  <header class="header">
+    <h1>Calculo de Figuras</h1>
+  </header>
+
+  <main class="calculator-container row">
+    <section class="form-section">
+      <div class="type-buttons row">
+        <button id="2d-btn" class="active btn">2D</button>
+        <button id="3d-btn" class="btn">3D</button>
+      </div>
+
+      <form id="calculator-form">
+        <label for="figure-select" class="label">Selecciona la figura:</label>
+        <select id="figure-select">
+            <option value="circle">Círculo</option>
+            <option value="square">Cuadrado</option>
+            <option value="rectangle">Rectángulo</option>
+            <option value="triangle">Triángulo</option>
+            <option value="pentagon">Pentágono Regular</option>
+            <option value="hexagon">Hexágono Regular</option>
+          </select>
+
+        <div id="inputs-container"></div>
+
+        <button type="button" id="calculate-btn" class="calcular btn">Calcular</button>
+      </form>
+
+      <div class="result" id="result"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Análisis y Desarrollo de Software - Hugo Colmenares</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
